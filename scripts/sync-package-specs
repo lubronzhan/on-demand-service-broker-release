@@ -15,9 +15,9 @@ function dependencies() {
 
 function path_for_go_package() {
   package="$1"
-  if [[ -e "src/github.com/pivotal-cf/on-demand-service-broker/vendor/$package" ]]
+  if [[ -e "src/github.com/lubronzhan/on-demand-service-broker/vendor/$package" ]]
   then
-    echo "github.com/pivotal-cf/on-demand-service-broker/vendor/$package"
+    echo "github.com/lubronzhan/on-demand-service-broker/vendor/$package"
   elif [[ -e "src/$package" ]]
   then
     echo "$package"
@@ -57,14 +57,14 @@ function sync_package() {
 }
 
 pushd "$(dirname "$0")/.." >/dev/null
-  sync_package broker src/github.com/pivotal-cf/on-demand-service-broker/cmd/on-demand-service-broker
-  sync_package delete-all-service-instances src/github.com/pivotal-cf/on-demand-service-broker/cmd/delete-all-service-instances
-  sync_package upgrade-all-service-instances src/github.com/pivotal-cf/on-demand-service-broker/cmd/upgrade-all-service-instances
-  sync_package recreate-all-service-instances src/github.com/pivotal-cf/on-demand-service-broker/cmd/recreate-all-service-instances
-  sync_package collect-service-metrics src/github.com/pivotal-cf/on-demand-service-broker/cmd/collect-service-metrics
-  sync_package broker-post-start src/github.com/pivotal-cf/on-demand-service-broker/cmd/broker-post-start
-  sync_package orphan-deployments src/github.com/pivotal-cf/on-demand-service-broker/cmd/orphan-deployments
-  sync_package delete-all-service-instances-and-deregister-broker src/github.com/pivotal-cf/on-demand-service-broker/cmd/delete-all-service-instances-and-deregister-broker
-  sync_package deregister-broker src/github.com/pivotal-cf/on-demand-service-broker/cmd/deregister-broker
-  sync_package register-broker src/github.com/pivotal-cf/on-demand-service-broker/cmd/register-broker
+  sync_package broker src/github.com/lubronzhan/on-demand-service-broker/cmd/on-demand-service-broker
+  sync_package delete-all-service-instances src/github.com/lubronzhan/on-demand-service-broker/cmd/delete-all-service-instances
+  sync_package upgrade-all-service-instances src/github.com/lubronzhan/on-demand-service-broker/cmd/upgrade-all-service-instances
+  sync_package recreate-all-service-instances src/github.com/lubronzhan/on-demand-service-broker/cmd/recreate-all-service-instances
+  sync_package collect-service-metrics src/github.com/lubronzhan/on-demand-service-broker/cmd/collect-service-metrics
+  sync_package broker-post-start src/github.com/lubronzhan/on-demand-service-broker/cmd/broker-post-start
+  sync_package orphan-deployments src/github.com/lubronzhan/on-demand-service-broker/cmd/orphan-deployments
+  sync_package delete-all-service-instances-and-deregister-broker src/github.com/lubronzhan/on-demand-service-broker/cmd/delete-all-service-instances-and-deregister-broker
+  sync_package deregister-broker src/github.com/lubronzhan/on-demand-service-broker/cmd/deregister-broker
+  sync_package register-broker src/github.com/lubronzhan/on-demand-service-broker/cmd/register-broker
 popd >/dev/null

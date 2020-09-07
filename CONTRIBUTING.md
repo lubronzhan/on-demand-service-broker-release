@@ -12,7 +12,7 @@ It must be used on a version of BOSH that supports global cloud config (246 or h
 * bosh_cli Ruby gem
 
 ### Running Tests
-The [broker codebase](https://github.com/pivotal-cf/on-demand-service-broker)
+The [broker codebase](https://github.com/lubronzhan/on-demand-service-broker)
 contains a `system_tests` package that tests any deployed broker as a black box.
 Those tests can be run against a BOSH deployment of this release.
 

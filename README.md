@@ -1,5 +1,5 @@
 # on-demand-service-broker-release
-A BOSH release for a [Cloud Foundry on-demand service broker](https://github.com/pivotal-cf/on-demand-service-broker).
+A BOSH release for a [Cloud Foundry on-demand service broker](https://github.com/lubronzhan/on-demand-service-broker).
 
 The broker deploys any service release on demand. One service instance corresponds to one BOSH deployment.
 
@@ -13,7 +13,7 @@ Full user documentation can be found [here](https://docs.pivotal.io/svc-sdk/odb)
 
 Follow [this guide](https://docs.pivotal.io/svc-sdk/odb/getting-started.html) to try out an example product.
 
-### Creating a ODB Based Service 
+### Creating a ODB Based Service
 
 We have [an SDK](https://github.com/pivotal-cf/on-demand-services-sdk) to start you off building on demand services. This helps you create [service adapters](https://docs.pivotal.io/svc-sdk/odb/creating.html), required by the ODB to deploy on demand instances of your [BOSH release](https://bosh.io/docs)
 
@@ -23,14 +23,14 @@ Once you have an ODB integration completed for your service you may wish to crea
 
 ## Contributing
 
-- See [CONTRIBUTING](CONTRIBUTING.md) 
+- See [CONTRIBUTING](CONTRIBUTING.md)
 
 ## Releases and versioning
 
-- The on-demand services SDK is pre-1.0.0 and uses semantic versioning. 
-   - This means that we reserve the right to release breaking changes in minor versions. 
-- Breaking changes will always be clearly flagged in release notes. 
-- We do not backwards apply patches, as no version other than the current is in support. 
+- The on-demand services SDK is pre-1.0.0 and uses semantic versioning.
+   - This means that we reserve the right to release breaking changes in minor versions.
+- Breaking changes will always be clearly flagged in release notes.
+- We do not backwards apply patches, as no version other than the current is in support.
 
 ### A note on breaking changes
 

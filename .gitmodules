@@ -24,3 +24,7 @@
 	url = https://github.com/pivotal-cf/on-demand-services-sdk.git
 	pushurl = git@github.com:pivotal-cf/on-demand-services-sdk.git
 	branch = main
+[submodule "src/github.com/lubronzhan/on-demand-service-broker"]
+	path = src/github.com/lubronzhan/on-demand-service-broker
+	url = git@github.com:lubronzhan/on-demand-service-broker.git
+	branch = test_single_bosh_client

@@ -5,12 +5,12 @@
 1. Ensure [VirtualBox](https://www.virtualbox.org/wiki/Downloads) is installed
    and running, following instructions from the website.
 
-1. Clone the [ODB release](https://github.com/pivotal-cf/on-demand-service-broker-release).
+1. Clone the [ODB release](https://github.com/lubronzhan/on-demand-service-broker-release).
    In this example we'll put it in $HOME/workspace:
     ```bash
     $ mkdir -p $HOME/workspace
     $ cd $HOME/workspace
-    $ git clone https://github.com/pivotal-cf/on-demand-service-broker-release
+    $ git clone https://github.com/lubronzhan/on-demand-service-broker-release
     ```
 
 1. Fetch the submodules to get the ODB source, and example adapter and service releases:
@@ -67,7 +67,7 @@ dynamic_bosh_config.
 
 1. Run the required system test, e.g. dynamic_bosh_config:
     ```bash
-    $ cd $ODB/src/github.com/pivotal-cf/on-demand-service-broker/system_tests
+    $ cd $ODB/src/github.com/lubronzhan/on-demand-service-broker/system_tests
     $ ./run_system_tests_local.sh $ODB/vbox/artifacts/broker-deployment-vars.yml dynamic_bosh_config
     ```
 

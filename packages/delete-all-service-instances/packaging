@@ -12,6 +12,6 @@ source /var/vcap/packages/golang-1-linux/bosh/compile.env
 
 export GOBIN="${BOSH_INSTALL_TARGET}/bin"
 
-pushd github.com/pivotal-cf/on-demand-service-broker/cmd/delete-all-service-instances
+pushd github.com/lubronzhan/on-demand-service-broker/cmd/delete-all-service-instances
   go install -mod=vendor
 popd
